@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://o51idf4783k5"]
+
+[ext_resource type="TileSet" uid="uid://bhc2cb14js8cd" path="res://assets/tileset.tres" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://hciadyvmh7cx" path="res://script/game.gd" id="1_e2o6t"]
+[ext_resource type="Script" uid="uid://ostvsiuiffco" path="res://script/maze.gd" id="3_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://cxfherbk1062o" path="res://scene/player.tscn" id="3_feb5d"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_e2o6t")
+
+[node name="Maze" type="TileMapLayer" parent="."]
+tile_set = ExtResource("1_80nbo")
+script = ExtResource("3_fc0e3")
+objects_layer_node_path = NodePath("../Objects")
+path_terrain_set_on_objects_id = 0
+path_terrain_on_objects_id = 1
+player_node_path = NodePath("../Player")
+
+[node name="Objects" type="TileMapLayer" parent="."]
+tile_set = ExtResource("1_80nbo")
+
+[node name="Player" parent="." instance=ExtResource("3_feb5d")]
+visible = false
