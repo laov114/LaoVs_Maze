@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" load_steps=7 format=3 uid="uid://bhc2cb14js8cd"]
 
 [ext_resource type="Texture2D" uid="uid://li1j8mhp5epy" path="res://assets/tileset.png" id="1_ylah7"]
-[ext_resource type="PackedScene" uid="uid://cxfherbk1062o" path="res://scene/player.tscn" id="2_fcvr3"]
-[ext_resource type="PackedScene" uid="uid://bmfrjs0gfmw2x" path="res://scene/start.tscn" id="3_7lii3"]
-[ext_resource type="PackedScene" uid="uid://jgiro762pbog" path="res://scene/end.tscn" id="4_uyjym"]
+[ext_resource type="PackedScene" uid="uid://cxfherbk1062o" path="res://scenes/player.tscn" id="2_fcvr3"]
+[ext_resource type="PackedScene" uid="uid://bmfrjs0gfmw2x" path="res://scenes/start.tscn" id="3_7lii3"]
+[ext_resource type="PackedScene" uid="uid://jgiro762pbog" path="res://scenes/end.tscn" id="4_uyjym"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2o6t"]
 texture = ExtResource("1_ylah7")
